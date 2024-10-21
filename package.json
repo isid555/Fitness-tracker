@@ -6,7 +6,11 @@
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "node backend/server.js",
     "start-frontend": "npm run start --prefix frontend/client",
+<<<<<<< HEAD
     "build": " npm run build --prefix client"
+=======
+   "build": "cd frontend && npm install && npm run build"
+>>>>>>> 352da91f29e96b1e04808995745ce4530a0e6be5
   },
   "engines": {
     "node": "16.x"
