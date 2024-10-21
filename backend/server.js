@@ -5,10 +5,19 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
-
+const path = require("path")
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT =  5000;
 
+// Serve static files from the React app
+
+// Serve static files from the React app
+// app.use(express.static(path.join(__dirname, 'frontend/client/build')));
+//
+// // The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'frontend', 'client', 'build', 'index.html'));
+// });
 // Middleware
 app.use(cors({
     origin: 'http://localhost:3000',

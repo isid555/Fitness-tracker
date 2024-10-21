@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
+    "health": "file:..",
     "mongoose": "^8.7.1"
   }
 }
